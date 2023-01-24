@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Lab 3-2 Starting Point</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang='en'>
+
+<head>
+  <meta charset='utf-8' />
+  <title>Toggle layers</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <!-- Mapbox JS API !-->
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.js'></script>
+  <!-- Mapbox CSS!-->
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css' rel='stylesheet' />
+</head>
+
+<body>
+  <div id='map'></div>
+  <div id='console'>
+    <h1>Crime</h1>
+    <p>Data: <a href='https://data.police.uk/'>Crime Data </a> in City of London, 2021</p>
+
+    <!–– Slider goes below––>
+      <div class='session' id='sliderbar'>
+        <h2>Month: <label id='active-month'>1</label></h2>
+        <input id='slider' class='row' type='range' min='1' max='12' step='1' value='1' />
+      </div>
+
+      <!–– Radio buttons go below––>
+        <div class='session'>
+          <h2>Crime type</h2>
+          <div class='row' id='filters'>
+            <input id='all' type='radio' name='toggle' value='all' checked='checked'>
+            <label for='all'>All</label>
+            <input id='shoplifting' type='radio' name='toggle' value='shoplifting'>
+            <label for='shoplifting'>Shoplifting</label>
+            <input id='bike' type='radio' name='toggle' value='bike'>
+            <label for='bike'>Bike theft</label>
+          </div>
+        </div>
+
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
